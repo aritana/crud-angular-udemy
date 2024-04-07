@@ -7,7 +7,8 @@ import { CriarProdutoComponent } from './components/criar-produto/criar-produto.
 const routes: Routes = [
   {path:'', component:ListarProdutosComponent},
   {path:'criar-produto', component:CriarProdutoComponent},
-  {path:'editar-produto/:id', component:CriarProdutoComponent}
+  {path:'editar-produto/:id', component:CriarProdutoComponent},
+  {path:'**', redirectTo: '',pathMatch:'full'}
 ];
 
 @NgModule({
